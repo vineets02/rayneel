@@ -102,7 +102,7 @@ export default function Footer() {
                 </a>
               </li>
             </ul>
-            <div className="mt-4">
+            {/* <div className="mt-4">
               <p className="font-bold text-gray-900">For Media Queries:</p>
               <a
                 href="mailto:mediaqueries@rayneel.com"
@@ -110,7 +110,7 @@ export default function Footer() {
               >
                 mediaqueries@rayneel.in
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
 
