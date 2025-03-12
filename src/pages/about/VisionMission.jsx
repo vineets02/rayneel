@@ -1,4 +1,6 @@
 import { motion } from 'framer-motion';
+import mission from "../../assets/2.png"
+import vision from "../../assets/22.png"
 
 export default function VisionMission() {
   return (
@@ -35,9 +37,9 @@ export default function VisionMission() {
             {/* Vision Image */}
             <div>
               <motion.img
-                src="https://via.placeholder.com/600x400?text=Vision+Image"
+                src={vision}
                 alt="Vision"
-                className="w-full h-auto rounded-lg shadow-md"
+                className="w-full h-96 rounded-lg shadow-md"
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 1, delay: 0.3 }}
@@ -61,7 +63,7 @@ export default function VisionMission() {
             {/* Mission Image */}
             <div className="order-2 md:order-1">
               <motion.img
-                src="https://via.placeholder.com/600x400?text=Mission+Image"
+                src={mission}
                 alt="Mission"
                 className="w-full h-auto rounded-lg shadow-md"
                 initial={{ opacity: 0, scale: 0.9 }}

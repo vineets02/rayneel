@@ -51,7 +51,7 @@ export default function Brands() {
     <>
       {/* Carousel Section */}
       <div className="container mx-auto px-4 py-20">
-        <h1 className="text-4xl font-bold mb-8 text-center">Our Brand</h1>
+        <h1 className="text-4xl  mb-8 text-center font-medium italic font-[Lora]">Our Brand</h1>
         <Swiper {...settings}>
           {slides.map((slide, index) => (
             <SwiperSlide key={index}>
@@ -84,7 +84,7 @@ export default function Brands() {
 
       {/* New Brief Section */}
       <div className="container mx-auto px-4 py-20 my-10 bg-gray-50 rounded-lg shadow-md">
-        <h2 className="text-3xl font-bold mb-4 text-center">About Noble Nurture</h2>
+        <h2 className="text-3xl font-bold mb-4 text-center  italic font-[Lora]">About Noble Nurture</h2>
         <p className="text-gray-700 text-lg max-w-3xl mx-auto text-center">
           Noble Nurture is more than just a skincare brand—it’s a promise to deliver pure, effective,
           and sustainable solutions. Our commitment to clean beauty ensures that every product is crafted

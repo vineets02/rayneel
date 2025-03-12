@@ -1,4 +1,7 @@
 import { motion } from 'framer-motion';
+import first from "../../assets/14.jpg"
+import third from "../../assets/11.jpg"
+import two from "../../assets/13.jpg"
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -35,9 +38,9 @@ export default function NeedForChange() {
         {/* Image on Left */}
         <motion.div variants={itemVariants}>
           <img
-            src="https://via.placeholder.com/400x300?text=For+People"
+            src={first}
             alt="For People"
-            className="w-full h-auto rounded-lg shadow-md"
+            className="w-96 h-96 rounded-lg shadow-md"
           />
         </motion.div>
         {/* Content on Right */}
@@ -76,9 +79,9 @@ export default function NeedForChange() {
         {/* Image on Right */}
         <motion.div variants={itemVariants}>
           <img
-            src="https://via.placeholder.com/400x300?text=For+the+Planet"
+            src={two}
             alt="For the Planet"
-            className="w-full h-auto rounded-lg shadow-md"
+            className="w-96 h-96 rounded-lg shadow-md"
           />
         </motion.div>
       </motion.div>
@@ -93,9 +96,9 @@ export default function NeedForChange() {
         {/* Image on Left */}
         <motion.div variants={itemVariants}>
           <img
-            src="https://via.placeholder.com/400x300?text=Stat+Spotlight"
+            src={third}
             alt="Stat Spotlight"
-            className="w-full h-auto rounded-lg shadow-md"
+            className="w-96 h-96 rounded-lg shadow-md"
           />
         </motion.div>
         {/* Content on Right */}

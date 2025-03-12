@@ -57,9 +57,9 @@ export default function Header() {
             <li>
               <Link to="/brands">Brands</Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="/sustainability">Sustainability</Link>
-            </li>
+            </li> */}
             {/* <li>
               <Link to="/careers">Careers</Link>
             </li> */}
@@ -154,11 +154,11 @@ export default function Header() {
                 Brands
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="/sustainability" onClick={() => setIsMobileMenuOpen(false)}>
                 Sustainability
               </Link>
-            </li>
+            </li> */}
             {/* <li>
               <Link to="/careers" onClick={() => setIsMobileMenuOpen(false)}>
                 Careers

@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import img from "../../assets/01.jpg"
 
 export default function OurPromise() {
   return (
@@ -41,9 +42,9 @@ export default function OurPromise() {
           transition={{ duration: 1, delay: 0.3 }}
         >
           <img
-            src="https://via.placeholder.com/600x400?text=Our+Promise+Image"
+            src={img}
             alt="Our Promise"
-            className="w-full h-auto rounded-lg shadow-md"
+            className="w-96 h-96 rounded-lg shadow-md"
           />
         </motion.div>
       </div>

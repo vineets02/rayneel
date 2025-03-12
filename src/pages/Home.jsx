@@ -61,7 +61,7 @@ export default function Home() {
       {/* About Us / Highlights Section */}
       <section className="bg-white py-32">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-semibold text-center mb-8">About Us</h2>
+        <h2 className="text-3xl font-semibold text-center mb-8  italic font-[Lora]">About Us</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Left Column: Brand Logo */}
           <div className="flex justify-center">
@@ -85,25 +85,25 @@ export default function Home() {
               We believe that skincare is more than just a routine—it’s a 
               movement to protect both your skin and our planet.
             </p>
-            <div className="mt-6">
-              <Link to="/about" className="text-yellow-700 font-bold hover:underline">
+            {/* <div className="mt-6"> */}
+              {/* <Link to="/about" className="text-yellow-700 font-bold hover:underline">
                 Learn More
-              </Link>
-            </div>
+              </Link> */}
+            {/* </div> */}
           </div>
         </div>
       </div>
     </section>
 
       {/* Our Brands Section */}
-      <section className="py-12 bg-white">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-semibold text-center mb-8">Our Brand</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <section className=" bg-gray-50 py-20">
+      <div className="container mx-auto py-10 px-4">
+        <h2 className="text-3xl font-semibold text-center mb-8  italic font-[Lora]">Our Brand</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 py-10 gap-8">
           {/* Noble Nurture Card */}
-          <div className="mt-6 text-center">
+          <div className=" text-center">
           <Link to="/brands" className="text-blue-500 hover:underline">
-          <div className="bg-white  shadow hover:shadow-md  p-6 rounded-lg flex items-center justify-center">
+          <div className="bg-white  shadow hover:shadow-md   rounded-lg flex items-center justify-center">
             {/* Only Logo */}
             <img
               src={rayneelogo}
