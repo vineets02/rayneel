@@ -3,6 +3,7 @@ import rohitImage from "../../assets/rohitsingh.jpeg";
 import muktaImage from "../../assets/muktasingh.jpeg";
 import vineetImage from "../../assets/vineet.jpg";
 import dishaImage from "../../assets/disha.jpg";
+import { Helmet } from 'react-helmet-async';
 
 const teamMembers = [
   {
@@ -47,7 +48,36 @@ const cardVariants = {
 
 export default function OurTeam() {
   return (
-    <div className="container mx-auto px-4 py-20">
+    <>
+    <Helmet>
+        <title>Our Team | Ray Neel</title>
+        <meta
+          name="description"
+          content="Meet the dedicated team behind Ray Neel, a brand transforming skincare with innovative technology and sustainable practices. Our leadership drives strategic growth and ensures authenticity through expertise in ecommerce, digital marketing, and technology."
+        />
+        <meta
+          name="keywords"
+          content="Ray Neel, Our Team, skincare, clean beauty, digital marketing, ecommerce, sustainable skincare, leadership"
+        />
+        {/* Open Graph Tags */}
+        <meta property="og:title" content="Our Team | Ray Neel" />
+        <meta
+          property="og:description"
+          content="Meet the dedicated team behind Ray Neel, transforming skincare with innovative technology and sustainable practices."
+        />
+        <meta property="og:url" content="https://rayneel.in/about/our-team" />
+        <meta property="og:type" content="website" />
+        {/* Twitter Card Tags */}
+        {/* <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Our Team | Ray Neel" /> */}
+        <meta
+          name="twitter:description"
+          content="Discover the leadership behind Ray Neel and how our team drives innovation in clean, sustainable skincare."
+        />
+        <link rel="canonical" href="https://rayneel.in/about/our-team" />
+      </Helmet>
+
+   <div className="container mx-auto px-4 py-20">
       <motion.h1
         className="text-4xl  mb-8 text-center font-medium italic font-[Lora]"
         initial={{ opacity: 0, y: -20 }}
@@ -83,5 +113,7 @@ export default function OurTeam() {
         ))}
       </motion.div>
     </div>
+    </>
+ 
   );
 }

@@ -6,6 +6,7 @@ import 'swiper/css/pagination';
 import first from "../assets/1.jpg";
 import sec from "../assets/2.jpg";
 import third from "../assets/4.jpg";
+import { Helmet } from 'react-helmet-async';
 
 const slides = [
   {
@@ -49,6 +50,35 @@ export default function Brands() {
 
   return (
     <>
+    <Helmet>
+        <title>Noble Nurture | Pure & Effective Skincare</title>
+        <meta 
+          name="description" 
+          content="Discover Noble Nurture, a promise to deliver pure, effective, and sustainable skincare solutions. Experience clean beauty through advanced formulations and eco-friendly practices." 
+        />
+        <meta 
+          name="keywords" 
+          content="Noble Nurture, skincare, clean beauty, sustainable skincare, non-toxic skincare, effective skincare, eco-friendly skincare" 
+        />
+        {/* Open Graph Tags */}
+        <meta property="og:title" content="Noble Nurture | Pure & Effective Skincare" />
+        <meta 
+          property="og:description" 
+          content="Discover Noble Nurture, where we blend natural ingredients with advanced technology to deliver pure, effective skincare solutions that care for your skin and the planet." 
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://rayneel.in/brands" />
+        <meta property="og:image" content="https://yourdomain.com/path-to-og-image.jpg" />
+        {/* Twitter Card Tags */}
+        {/* <meta name="twitter:card" content="summary_large_image" /> */}
+        {/* <meta name="twitter:title" content="Noble Nurture | Pure & Effective Skincare" /> */}
+        {/* <meta 
+          name="twitter:description" 
+          content="Experience Noble Nurture—a promise of pure, effective, and sustainable skincare that combines clean beauty with cutting-edge technology." 
+        /> */}
+        {/* <meta name="twitter:image" content="https://yourdomain.com/path-to-twitter-image.jpg" /> */}
+        <link rel="canonical" href="https://rayneel.in/brands" />
+      </Helmet>
       {/* Carousel Section */}
       <div className="container mx-auto px-4 py-20">
         <h1 className="text-4xl  mb-8 text-center font-medium italic font-[Lora]">Our Brand</h1>

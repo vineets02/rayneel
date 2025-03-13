@@ -1,8 +1,39 @@
 import { motion } from 'framer-motion';
 import img from "../../assets/01.jpg"
+import { Helmet } from 'react-helmet-async';
 
 export default function OurPromise() {
   return (
+    <>
+     <Helmet>
+        <title>Our Promise: Skincare That Cares | RayNeel</title>
+        <meta
+          name="description"
+          content="At Rayneel Consumer Global Private Limited, we believe skincare should be more than a routine—it should be a movement. Discover our promise to deliver pure, effective, and sustainable skincare solutions through clean beauty, sustainable practices, and personalized experiences."
+        />
+        <meta
+          name="keywords"
+          content="RayNeel, skincare, clean beauty, sustainable skincare, personalized skincare, Noble Nurtures, our promise"
+        />
+        {/* Open Graph Tags */}
+        <meta property="og:title" content="Our Promise: Skincare That Cares | RayNeel" />
+        <meta
+          property="og:description"
+          content="Discover how Rayneel Consumer Global Private Limited is revolutionizing skincare with clean, sustainable, and personalized solutions. Our promise delivers a skincare experience like no other."
+        />
+        <meta property="og:image" content="https://yourdomain.com/path-to-og-image.jpg" />
+        <meta property="og:url" content="https://rayneel.in/about/our-promise" />
+        <meta property="og:type" content="website" />
+        {/* Twitter Card Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Our Promise: Skincare That Cares | RayNeel" />
+        <meta
+          name="twitter:description"
+          content="Experience the promise of RayNeel—where clean beauty meets sustainable, personalized skincare solutions."
+        />
+        {/* <meta name="twitter:image" content="https://yourdomain.com/path-to-twitter-image.jpg" /> */}
+        <link rel="canonical" href="https://rayneel.in/about/our-promise" />
+      </Helmet>
     <div className="container mx-auto px-4 py-12">
       <motion.h1
         className="text-4xl  mb-6 font-medium italic font-[Lora]"
@@ -49,5 +80,6 @@ export default function OurPromise() {
         </motion.div>
       </div>
     </div>
+    </>
   );
 }

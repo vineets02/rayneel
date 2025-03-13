@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import first from "../../assets/14.jpg"
 import third from "../../assets/11.jpg"
 import two from "../../assets/13.jpg"
+import { Helmet } from 'react-helmet-async';
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -17,7 +18,32 @@ const itemVariants = {
 };
 
 export default function NeedForChange() {
-  return (
+  return (<>
+
+<Helmet>
+    <title>What’s Wrong with Conventional Skincare? | Ray Neel</title>
+    <meta 
+      name="description" 
+      content="Discover the drawbacks of conventional skincare: short-term effects like skin irritation, dryness, and redness; long-term damage such as disrupted skin barriers and premature aging; and environmental issues like waste pollution and toxic runoff." 
+    />
+    <meta name="keywords" content="conventional skincare, skin irritation, dryness, premature aging, toxic runoff, waste pollution, non-biodegradable packaging, clean beauty" />
+    {/* Open Graph Meta Tags */}
+    <meta property="og:title" content="What’s Wrong with Conventional Skincare? | Ray Neel" />
+    <meta 
+      property="og:description" 
+      content="Learn about the negative impacts of conventional skincare products on both people and the environment, including skin irritation, increased sensitivity, and toxic runoff." 
+    />
+    <meta property="og:url" content="https://rayneel.in/about/need-for-change" />
+    <meta property="og:type" content="website" />
+    {/* Twitter Card Meta Tags */}
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="What’s Wrong with Conventional Skincare? | Ray Neel" />
+    <meta 
+      name="twitter:description" 
+      content="Conventional skincare products can cause irritation and long-term damage to the skin while contributing to environmental harm through waste pollution and toxic runoff." 
+    />
+    <link rel="canonical" href="https://rayneel.in/about/need-for-change" />
+  </Helmet>
     <div className="container mx-auto px-4 py-12">
       <motion.h1
         className="text-4xl  mb-12 text-center font-medium italic font-[Lora]"
@@ -111,5 +137,8 @@ export default function NeedForChange() {
         </motion.div>
       </motion.div>
     </div>
+
+  </>
+   
   );
 }

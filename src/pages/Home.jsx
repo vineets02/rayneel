@@ -3,10 +3,36 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import heroImg from "../assets/3.jpg"
 import rayneelogo from "../assets/tube.png"
+import { Helmet } from 'react-helmet-async';
 
 export default function Home() {
   return (
     <div>
+          <Helmet>
+        <title>Rayneel | Transforming Skincare with Technology and Clean Beauty</title>
+        <meta 
+          name="description" 
+          content="Rayneel Consumers Global Private Limited is dedicated to revolutionizing skincare with a commitment to quality, sustainability, and innovation. Discover our story and experience a movement in clean beauty." 
+        />
+        <meta name="keywords" content="Rayneel, skincare, clean beauty, sustainable skincare, technology, innovation" />
+        <meta property="og:title" content="Rayneel | Transforming Skincare with Technology and Clean Beauty" />
+        <meta 
+          property="og:description" 
+          content="Rayneel Consumers Global Private Limited revolutionizes skincare by blending nature and cutting-edge technology to deliver pure, effective, and sustainable beauty solutions." 
+        />
+        <meta property="og:image" content="https://yourdomain.com/path-to-og-image.jpg" />
+        <meta property="og:url" content="https://rayneel.in/" />
+        <meta property="og:type" content="website" />
+        {/* <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Rayneel | Transforming Skincare with Technology and Clean Beauty" />
+        <meta 
+          name="twitter:description" 
+          content="Experience the future of skincare with Rayneel, where technology meets clean beauty for sustainable, effective solutions." 
+        />
+        <meta name="twitter:image" content="https://yourdomain.com/path-to-twitter-image.jpg" /> */}
+        <link rel="canonical" href="https://rayneel.in/" />
+      </Helmet>
+
       {/* Hero Section */}
       <section className="bg-white py-12 md:py-48 bg-gradient-to-r from-orange-50 to-gray-200">
         <div className="container mx-auto px-20  flex flex-col md:flex-row items-center">

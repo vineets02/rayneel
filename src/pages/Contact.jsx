@@ -23,7 +23,7 @@ export default function Contact() {
     setResponseMessage('');
 
     try {
-      await axios.post('https://vineetphotography.in/api/contact/order', form);
+      await axios.post('https://test.rayneel.in/api/contact/order', form);
       setResponseMessage('Message sent successfully!');
       setForm({ name: '', email: '', phone: '', message: '' });
     } catch (error) {
